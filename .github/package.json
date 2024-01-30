@@ -7,6 +7,9 @@
   "scripts": {
     "test": "node bin/brain-games.js"
   },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "author": "",
   "license": "ISC"
 }
