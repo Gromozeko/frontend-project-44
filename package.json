@@ -1,5 +1,8 @@
-{
-  "dependencies": {
-    "readline-sync": "^1.4.10"
-  }
-}
+// {
+//   "dependencies": {
+//     "readline-sync": "^1.4.10"
+//   },
+//   "bin": {
+//     "brain-games": "bin/brain-games.js"
+//   }
+// }
