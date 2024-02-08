@@ -48,8 +48,12 @@ function brainProgression() {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if(ansCheck===true)score+=1;
-    else isCorrect=false;
+    if(ansCheck(userAnswer,question.hiddenValue,name)===true){
+      score+=1;
+    }
+    else {
+      isCorrect=false;
+    }
   }
 
   if (score === 3) {
