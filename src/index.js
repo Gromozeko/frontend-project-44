@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const ansCheck = (userAnswer, rightAnswer, name) => {
     if(userAnswer===rightAnswer){
         console.log('Correct!');
