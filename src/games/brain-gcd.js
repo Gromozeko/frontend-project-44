@@ -17,6 +17,7 @@ function generateRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// eslint-disable-next-line consistent-return
 function brainGcd() {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
@@ -33,10 +34,10 @@ function brainGcd() {
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
+    // eslint-disable-next-line radix
     if (parseInt(userAnswer) === corAnswer) {
       console.log('Correct!');
-    } 
-    else {
+    } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${corAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return undefined;

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-multiple-empty-lines */
 /* eslint-disable no-plusplus */
 
 import readlineSync from 'readline-sync';
