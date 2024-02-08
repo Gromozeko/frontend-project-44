@@ -28,17 +28,18 @@ function brainGcd() {
     const num1 = generateRandomNumber(1, 100);
     const num2 = generateRandomNumber(1, 100);
     const expression = `${num1} ${num2}`;
-    const correctAnswer = calculateGCD(num1, num2);
+    const corAnswer = calculateGCD(num1, num2);
 
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (Number(userAnswer) === correctAnswer) {
+    if (parseInt(userAnswer) === corAnswer) {
       console.log('Correct!');
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+    } 
+    else {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${corAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
-      return;
+      return undefined;
     }
   }
 
