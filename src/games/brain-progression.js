@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/*eslint-disable-next-line no-console */
 
 import readlineSync from 'readline-sync';
 
@@ -47,17 +48,8 @@ function brainProgression() {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === question.hiddenValue) {
-      // eslint-disable-next-line no-console
-      console.log('Correct!');
-      score += 1;
-    } else {
-      // eslint-disable-next-line no-console
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${question.hiddenValue}'.`);
-      // eslint-disable-next-line no-console
-      console.log(`Let's try again, ${name}!`);
-      isCorrect = false;
-    }
+    if(ansCheck===true)score+=1;
+    else isCorrect=false;
   }
 
   if (score === 3) {
