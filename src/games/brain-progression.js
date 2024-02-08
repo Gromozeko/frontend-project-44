@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*eslint-disable-next-line no-console */
-
+import ansCheck from '../index.js';
 import readlineSync from 'readline-sync';
 
 function generateProgression(length) {
