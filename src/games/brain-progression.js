@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-/*eslint-disable-next-line no-console */
-import ansCheck from '../index.js';
+/* eslint-disable import/extensions */
+/* eslint-disable-next-line no-console */
 import readlineSync from 'readline-sync';
+import ansCheck from '../index.js';
 
 function generateProgression(length) {
   const start = Math.floor(Math.random() * 10);
@@ -48,11 +49,10 @@ function brainProgression() {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if(ansCheck(userAnswer,question.hiddenValue,name)===true){
-      score+=1;
-    }
-    else {
-      isCorrect=false;
+    if (ansCheck(userAnswer, question.hiddenValue, name) === true) {
+      score += 1;
+    } else {
+      isCorrect = false;
     }
   }
 
