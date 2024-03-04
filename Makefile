@@ -13,6 +13,11 @@ brain-progression:
 brain-prime:
 	node bin/brain-prime.js
 publish:
-	npm publish --dry-run
+	npm publish --dry-runlint:
+	
 lint:
-	npx eslint
+	npx eslint .
+
+lint:
+	npx eslint --fix .
+
